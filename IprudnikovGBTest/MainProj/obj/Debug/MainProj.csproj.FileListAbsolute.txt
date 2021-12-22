@@ -1,0 +1,7 @@
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\bin\Debug\MainProj.exe.config
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\bin\Debug\MainProj.exe
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\bin\Debug\MainProj.pdb
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\obj\Debug\MainProj.csproj.AssemblyReference.cache
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\obj\Debug\MainProj.csproj.CoreCompileInputs.cache
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\obj\Debug\MainProj.exe
+D:\proga\gbTestTaskCloneRepo\Test_11_18\IprudnikovGBTest\MainProj\obj\Debug\MainProj.pdb
