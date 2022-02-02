@@ -1,0 +1,8 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/IAndreevaTestTask/ArrayMultiplication/.vs/ArrayMultiplication
+/IAndreevaTestTask/ArrayMultiplication/ArrayMultiplication/bin/Debug/net6.0
+/IAndreevaTestTask/ArrayMultiplication/ArrayMultiplication/obj
