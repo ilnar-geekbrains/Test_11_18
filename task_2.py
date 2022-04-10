@@ -1,6 +1,19 @@
 from itertools import combinations_with_replacement
 
 def product_of_polynom(poly_1, poly_2):
+    """
+    This function computes the coefficients of 2 producted polynomes.
+    poly_1 and poly_2 are lists of coefficients.
+    Returns a list of resulted coefficients.
+
+    Example:
+    For polynomes x-1 and 2x+1 resulted polynome is x^2+x-2.
+    Original lists are [-1, 1] and [2, 1].
+    Resulted list is [-2, 1, 1]
+
+    If any of original list is [] or [0] - the resulted list will be [0]
+    """
+
     if not poly_1:
         poly_1 = [0]
     if not poly_2:
