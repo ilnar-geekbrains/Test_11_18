@@ -48,11 +48,8 @@ int[] generateArray(int lenght)
 
 void main()
 {
-    Console.WriteLine("Hello, World!");
 
 }
-
-Console.WriteLine("Hello, World!");
 
 
 // 5 test cases
