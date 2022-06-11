@@ -5,7 +5,6 @@ let copyArr = [...myArr];
 console.log(copyArr);
 
 //task 2
-
 let firstArr = [-1,1];
 let secondArr = [2,1];
 let finalyResult = [firstArr.length + secondArr.length];
