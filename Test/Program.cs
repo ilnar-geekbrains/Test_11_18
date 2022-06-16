@@ -49,7 +49,7 @@ namespace Test
 
         static void Main(string[] args)
         {
-            const int maxRand = 10;
+            const int maxRand = 10; // Разброс рандома в обе стороны
             int sizeA = 3;
             int sizeB = 2;
             List<int> a = new List<int>();
