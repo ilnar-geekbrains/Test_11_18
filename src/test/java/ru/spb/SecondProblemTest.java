@@ -49,7 +49,7 @@ class SecondProblemTest {
     @DisplayName("Both arrays have length 1")
     void test5() {
         var actualArray = SecondProblem.multiplyArrays(new int[]{3}, new int[]{2});
-        var expectedArray = new int[]{-2, 2};
+        var expectedArray = new int[]{6};
 
         Assertions.assertArrayEquals(expectedArray, actualArray);
     }
@@ -58,7 +58,7 @@ class SecondProblemTest {
     @DisplayName("All items are 0")
     void test6() {
         var actualArray = SecondProblem.multiplyArrays(new int[]{0, 0, 0}, new int[]{0, 0});
-        var expectedArray = new int[]{0, 0, 0};
+        var expectedArray = new int[]{0, 0, 0, 0};
 
         Assertions.assertArrayEquals(expectedArray, actualArray);
     }
