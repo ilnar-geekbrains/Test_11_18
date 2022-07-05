@@ -1,6 +1,7 @@
 
-
+// Рекурсивная функция копирования объектов (к которым относятся и массивы)
 const deepCloneVariable = variable => {
+    // Примитивные типы данных не копируются по ссылке, так что просто возвращаем их
     if (typeof variable !== 'object') return variable
     // Официальный призннанный баг движка JS (typeof null равно 'object')
     // Так что для null здесь отдельная проверка
@@ -16,6 +17,7 @@ const deepCloneVariable = variable => {
             // Собственно тут и происходит рекурсия
             // Углубление в объект идет до тех пор, пока  typeof variable[key] === "object"
     );
+
     // Проверяем является ли variable массивом и не пустой ли он
     return Array.isArray(variable) && variable.length
         // Если variable массив и он не пуст, тогда
