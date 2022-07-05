@@ -49,4 +49,21 @@ const checkIsObjectsHaveSameStructure = (obj1, obj2) => {
     return JSON.stringify(obj1) === JSON.stringify(obj2)
 }
 
+// Функция для проверки, что вложенные объекты действительно являются отдельными копиями
+const checkIfObjectsAreDeepCopies = (obj1, obj2) => {
+    if (obj1 instanceof Object && obj2 instanceof Object) {
+        let isAreDeepCopies = false
+        Object.keys(obj1).forEach(
+            key => {
+                if (typeof obj1[key] === "object" && typeof obj2[key] === "object") {
+                    if (obj1[key] === obj2[key]) isAreDeepCopies = true
+                    checkIfObjectsAreDeepCopies(obj1[key], obj2[key])
+                }
+            }
+        );
+        return isAreDeepCopies
+    }
+    return null
+};
+
 
