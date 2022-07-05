@@ -36,8 +36,17 @@ const deepCloneVariable = variable => {
 const deepCloneArray = (array) => {
     // Проверяем является array массивом
     if (array instanceof Array) {
-        return deepCloneVariable(item)
+        return deepCloneVariable(array)
     }
     // Иначе возвращаем null
     return null
 }
+
+// Функции для тестирования
+
+// Функция для проверки, что объекты равны друг другу (имеют одинковые поля, в том числе вложенные на любом уровне)
+const checkIsObjectsHaveSameStructure = (obj1, obj2) => {
+    return JSON.stringify(obj1) === JSON.stringify(obj2)
+}
+
+
