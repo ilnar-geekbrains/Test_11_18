@@ -14,8 +14,8 @@ const deepCloneVariable = variable => {
         key =>
         (surfaceСlone[key] =
             typeof variable[key] === "object" ? deepCloneVariable(variable[key]) : variable[key])
-            // Собственно тут и происходит рекурсия
-            // Углубление в объект идет до тех пор, пока  typeof variable[key] === "object"
+        // Собственно тут и происходит рекурсия
+        // Углубление в объект идет до тех пор, пока  typeof variable[key] === "object"
     );
 
     // Проверяем является ли variable массивом и не пустой ли он
@@ -65,5 +65,22 @@ const checkIfObjectsAreDeepCopies = (obj1, obj2) => {
     }
     return null
 };
+
+// Тестирование
+
+const arrayOfTestArrays = [
+    [[1], {}, null, { l: { k: 'k' } }, [1, null, { h: [] }]],
+    [[[], []], { 1: null }, 1, [1, 2, null]],
+    [undefined, [NaN], { s: '', g: { g: { g: {} } } }],
+    [[{ j: Symbol('1') }, [{ l: [[]] }]]],
+    [],
+]
+
+arrayOfTestArrays.forEach((arr, index) => {
+    const arrCopy = deepCloneArray(arr)
+    if (checkIsObjectsHaveSameStructure(arr, arrCopy) && checkIfObjectsAreDeepCopies(arr, arrCopy)) {
+        console.log(`Тест ${index + 1} пройден`)
+    } else console.log(`Тест ${index + 1} провален`)
+})
 
 
