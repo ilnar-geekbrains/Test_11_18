@@ -31,3 +31,13 @@ const deepCloneVariable = variable => {
             // в других случаях variable это объект и мы возвращаем копию surfaceСlone.
             : surfaceСlone;
 };
+
+// Функция для копирования массива
+const deepCloneArray = (array) => {
+    // Проверяем является array массивом
+    if (array instanceof Array) {
+        return deepCloneVariable(item)
+    }
+    // Иначе возвращаем null
+    return null
+}
