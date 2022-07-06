@@ -10,8 +10,35 @@ int[] copyArray(int[] initArray)
     {
         resultArray[i] = initArray[i];
     }
-    // Функция возвращает резултатом работы копию исходного массива
+    // Функция возвращает результатом работы копию исходного массива
     return resultArray;
 }
 
-System.Console.WriteLine(string.Join(" ", copyArray(new int[]{1, 2, 3})));
+// Тесты
+
+if ("1 2 3" == string.Join(" ", copyArray(new int[]{1, 2, 3})))
+{
+    System.Console.WriteLine("Тест пройден");
+}
+else
+{
+    System.Console.WriteLine("Тест провален");
+}
+
+if ("1 2 3 4" != string.Join(" ", copyArray(new int[]{1, 2, 3})))
+{
+    System.Console.WriteLine("Тест пройден");
+}
+else
+{
+    System.Console.WriteLine("Тест провален");
+}
+
+if ("0 -2 7 0" == string.Join(" ", copyArray(new int[]{0, -2, 7, 0})))
+{
+    System.Console.WriteLine("Тест пройден");
+}
+else
+{
+    System.Console.WriteLine("Тест провален");
+}
