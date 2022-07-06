@@ -16,10 +16,6 @@
 
 int[] arrayMultiplication(int[] arrayA, int[] arrayB)
 {
-    // Если массивы имеют разные длины, уравниваем их по большему
-    if (arrayA.Length > arrayB.Length) Array.Resize(ref arrayB, arrayA.Length);
-    if (arrayA.Length < arrayB.Length) Array.Resize(ref arrayA, arrayB.Length);
-
     // Объявляем массив для размещения результатов вычислений.
     // Длина массива равна сумме длин исходных массивов минус 1
     // (x + a)(x + b) = x^2 + x^1*a*b + a*b из 4-ех значений -> 3
@@ -31,11 +27,41 @@ int[] arrayMultiplication(int[] arrayA, int[] arrayB)
         {
             // При перемножении полиномов показатели степени складываются (x^1 * x^1 = x^2).
             // Соответственно результат перемножения элементов массивов добавляем в 
-            // результирующий массив под индексом i + j
+            // результирующий массив под индексом i + j (показатель степени)
             resultArray[i + j] += arrayA[i] * arrayB[j];
         }
     }
     return resultArray;
 }
 
-System.Console.WriteLine(string.Join(" ", arrayMultiplication(new int[]{-1, 1}, new int[]{2, 1})));
+// Тесты
+
+// (x - 1) * (x + 2) = (x^2 + x^1 - 2)
+if ("-2 1 1" == string.Join(" ", arrayMultiplication(new int[]{-1, 1}, new int[]{2, 1})))
+{
+    System.Console.WriteLine("Тест пройден");
+}
+else
+{
+    System.Console.WriteLine("Тест провален");
+}
+
+// (x^2 + x + 1) * (2*x + 2) = (2*x^3 + 4*x^2 + 4*x + 2)
+if ("2 4 4 2" == string.Join(" ", arrayMultiplication(new int[]{1, 1, 1}, new int[]{2, 2})))
+{
+    System.Console.WriteLine("Тест пройден");
+}
+else
+{
+    System.Console.WriteLine("Тест провален");
+}
+
+// (x - 1) * (x + 2) != (4*x^3 + x^2 + x^1 - 2)
+if ("-2 1 1 4" != string.Join(" ", arrayMultiplication(new int[]{-1, 1}, new int[]{2, 1})))
+{
+    System.Console.WriteLine("Тест пройден");
+}
+else
+{
+    System.Console.WriteLine("Тест провален");
+}
