@@ -1,50 +1,37 @@
-﻿// Написать программу, которая выводит на экран квадрат заданного числа
+﻿// Задача №1. Написать программу для копирования массива.
 
-// вариант 1. Решение для самых маленьких
+int[] array = new int[5];
+int[] arrayCopy = new int[array.Length];
 
-int number = 2;
-
-System.Console.WriteLine(number * number);
-
-// Вариант 2. Решение с базовыми элементами тестирования для тех кто постарше.
-
-int GetSquareOfValue(int number)
+void FillArrayRandom(int[] array)
 {
-    return number * number;
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(1,10);
+    }
+}
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
 }
 
-if (4 == GetSquareOfValue(2))
+void CopyArray(int[] array)
 {
-    System.Console.WriteLine("Тест пройден");
-}
-else
-{
-    System.Console.WriteLine("Тест провален");
-}
-
-if (25 == GetSquareOfValue(-5))
-{
-    System.Console.WriteLine("Тест пройден");
-}
-else
-{
-    System.Console.WriteLine("Тест провален");
+    for (int i = 0; i < array.Length; i++)
+    {
+        arrayCopy[i] = array[i];
+    }
 }
 
-if (0 == GetSquareOfValue(0))
-{
-    System.Console.WriteLine("Тест пройден");
-}
-else
-{
-    System.Console.WriteLine("Тест провален");
-}
 
-if (9 != GetSquareOfValue(4))
-{
-    System.Console.WriteLine("Тест пройден");
-}
-else
-{
-    System.Console.WriteLine("Тест провален");
-}
+FillArrayRandom(array);
+CopyArray(array);
+Console.WriteLine("Random array:");
+PrintArray(array);
+Console.WriteLine();
+Console.WriteLine("Array copy:");
+PrintArray(arrayCopy);
+Console.WriteLine();
