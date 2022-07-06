@@ -16,6 +16,10 @@
 
 int[] arrayMultiplication(int[] arrayA, int[] arrayB)
 {
+    // Если массивы имеют разные длины, уравниваем их по большему
+    if (arrayA.Length > arrayB.Length) Array.Resize(ref arrayB, arrayA.Length);
+    if (arrayA.Length < arrayB.Length) Array.Resize(ref arrayA, arrayB.Length);
+
     // Объявляем массив для размещения результатов вычислений.
     // Длина массива равна сумме длин исходных массивов минус 1
     // (x + a)(x + b) = x^2 + x^1*a*b + a*b из 4-ех значений -> 3
@@ -23,7 +27,7 @@ int[] arrayMultiplication(int[] arrayA, int[] arrayB)
     int[] resultArray = new int[arrayA.Length + arrayB.Length - 1];
     for (int i = 0; i < arrayA.Length; i++)
     {
-        for (int j = 0; j < arrayB; j++)
+        for (int j = 0; j < arrayB.Length; j++)
         {
             // При перемножении полиномов показатели степени складываются (x^1 * x^1 = x^2).
             // Соответственно результат перемножения элементов массивов добавляем в 
@@ -34,3 +38,4 @@ int[] arrayMultiplication(int[] arrayA, int[] arrayB)
     return resultArray;
 }
 
+System.Console.WriteLine(string.Join(" ", arrayMultiplication(new int[]{-1, 1}, new int[]{2, 1})));
