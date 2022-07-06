@@ -1,0 +1,20 @@
+{
+  "name": "test_11_18",
+  "version": "1.0.0",
+  "description": "Тестовое задание",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilnar-geekbrains/Test_11_18.git"
+  },
+  "author": "ZingerY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilnar-geekbrains/Test_11_18/issues"
+  },
+  "homepage": "https://github.com/ilnar-geekbrains/Test_11_18#readme"
+}
