@@ -16,7 +16,7 @@ public class Program
         return predictValue.SequenceEqual(resultValue);
     }
 
-    //Тесты "произведения массивов"
+    //Тесты "копирования массивов"
     public static void TestCopyArray()
     {
         bool isOK;
