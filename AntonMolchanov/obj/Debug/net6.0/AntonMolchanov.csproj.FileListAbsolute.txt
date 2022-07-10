@@ -1,0 +1,15 @@
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\bin\Debug\net6.0\AntonMolchanov.exe
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\bin\Debug\net6.0\AntonMolchanov.deps.json
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\bin\Debug\net6.0\AntonMolchanov.runtimeconfig.json
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\bin\Debug\net6.0\AntonMolchanov.dll
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\bin\Debug\net6.0\AntonMolchanov.pdb
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.csproj.AssemblyReference.cache
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.AssemblyInfoInputs.cache
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.AssemblyInfo.cs
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.csproj.CoreCompileInputs.cache
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.dll
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\refint\AntonMolchanov.dll
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.pdb
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\AntonMolchanov.genruntimeconfig.cache
+C:\Users\visio\OneDrive\Рабочий стол\Test_11_18\AntonMolchanov\obj\Debug\net6.0\ref\AntonMolchanov.dll
