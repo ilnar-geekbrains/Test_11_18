@@ -84,3 +84,10 @@ int [] ArrayMultiplication(int [] Arra1, int [] Arra2)
     }
     return ResultArray;
 }
+
+
+int [] Polynom1 = {3, 6, 5};
+int [] Polynom2 = {4, 2};
+
+int [] NewArray = ArrayMultiplication(Polynom1, Polynom2);
+PrintArray(NewArray);
