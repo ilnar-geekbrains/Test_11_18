@@ -52,3 +52,35 @@ PrintArray(Dublicat);
 // По указанному правилу произведение массивов [-1, 1] и [2, 1] должно быть равно [-2, 1, 1], 
 // т.к. (x - 1) * (x + 2) = (x^2 + x^1 - 2).
 
+int [] PolynomToArray(string poly)// метод, который перобразовывает полином, записанный в string, в массив.
+{
+    int DegreeIndex = poly.IndexOf("^")+1; // находим индекс старшей степени полинома.
+    int size = Convert.ToInt32(poly[DegreeIndex]+1);   // нашли размер нашего массива. 
+    int [] Array = new int [size];
+
+
+    return Array;
+}
+
+void PrintArray(int [] Arr)
+{
+    for (int i = 0; i < Arr.Length; i++)
+    {
+        Console.Write(Arr[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+int [] ArrayMultiplication(int [] Arra1, int [] Arra2)
+{
+    int size = Arra1.Length + Arra2.Length - 1;
+    int [] ResultArray = new int [size];
+    for (int i = 0; i < Arra1.Length; i++)
+    {
+        for (int j = 0; j < Arra2.Length; j++)
+        {
+            ResultArray[i+j] += Arra1[i]*Arra2[j];
+        }
+    }
+    return ResultArray;
+}
