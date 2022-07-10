@@ -57,7 +57,7 @@ int[] PolynomToArray(string poly)// метод, который перобраз�
     int DegreeIndex = poly.IndexOf("^") + 1; // находим индекс старшей степени полинома.
     int size = Convert.ToInt32(poly[DegreeIndex] + 1);   // нашли размер нашего массива. 
     int[] Array = new int[size];
-
+    // тут надо придумать, как распарсить строку и затем сформировать массив из коэффициентов.
 
     return Array;
 }
@@ -71,7 +71,7 @@ void PrintArray(int[] Arr)
     Console.WriteLine();
 }
 
-int[] ArrayMultiplication(int[] Arra1, int[] Arra2)
+int[] ArrayMultiplication(int[] Arra1, int[] Arra2) // метод для перемножения двух массивов.
 {
     int size = Arra1.Length + Arra2.Length - 1;
     int[] ResultArray = new int[size];
@@ -85,13 +85,13 @@ int[] ArrayMultiplication(int[] Arra1, int[] Arra2)
     return ResultArray;
 }
 
-void FromArrayToString(int[] Array)
+void FromArrayToString(int[] Array) // метод из массива возвращаетполином в строчном виде.
 {
     string polynom = string.Empty;
     for (int i = 0; i < Array.Length; i++)
     {
-        if (i == Array.Length - 1) polynom = $"{Array[i]}^{i}" + polynom;
-        else polynom = $" + {Array[i]}^{i}" + polynom;
+        if (i == Array.Length - 1) polynom = $"{Array[i]}*x^{i}" + polynom;
+        else polynom = $" + {Array[i]}*x^{i}" + polynom;
     }
     Console.WriteLine(polynom);
 }
