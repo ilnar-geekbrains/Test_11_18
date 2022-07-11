@@ -57,8 +57,16 @@ int[] PolynomToArray(string poly)// метод, который перобраз�
     int DegreeIndex = poly.IndexOf("^") + 1; // находим индекс старшей степени полинома.
     int size = Convert.ToInt32(poly[DegreeIndex] + 1);   // нашли размер нашего массива. 
     int[] Array = new int[size];
+    int i = 0;
     // тут надо придумать, как распарсить строку и затем сформировать массив из коэффициентов.
+    while(poly.Length > 4)
+    {
+        int ind = poly.IndexOf("*"); // находим индекс знака умножения
+        Array[i] = Convert.ToInt32(poly.Substring(0, ind)); //делаем срез строки до индекса знака умножения.
+        int plusIndex = poly.IndexOf("+");
+        poly = poly.Remove(0, plusIndex+1);
 
+    }
     return Array;
 }
 
@@ -91,15 +99,19 @@ void FromArrayToString(int[] Array) // метод из массива возвр
     for (int i = 0; i < Array.Length; i++)
     {
         if (i == Array.Length - 1) polynom = $"{Array[i]}*x^{i}" + polynom;
-        else polynom = $" + {Array[i]}*x^{i}" + polynom;
+        else polynom = $"+{Array[i]}*x^{i}" + polynom;
     }
     Console.WriteLine(polynom);
 }
 
+string poly1 = "5*x^2+4*x^1+3*x^0+";
+// int[] Polynom1 = {-1, 1};
+// int[] Polynom2 = {2, 1};
 
-int[] Polynom1 = { 3, 6, 5 };
-int[] Polynom2 = { 4, 2 };
+// int[] NewArray = ArrayMultiplication(Polynom1, Polynom2);
+// PrintArray(NewArray);
+// FromArrayToString(NewArray);
 
-int[] NewArray = ArrayMultiplication(Polynom1, Polynom2);
-PrintArray(NewArray);
-FromArrayToString(NewArray);
+int [] array = PolynomToArray(poly1);
+PrintArray(array);
+    
