@@ -104,14 +104,13 @@ void FromArrayToString(int[] Array) // метод из массива возвр
     Console.WriteLine(polynom);
 }
 
-string poly1 = "5*x^2+4*x^1+3*x^0+";
-// int[] Polynom1 = {-1, 1};
-// int[] Polynom2 = {2, 1};
 
-// int[] NewArray = ArrayMultiplication(Polynom1, Polynom2);
-// PrintArray(NewArray);
-// FromArrayToString(NewArray);
+int[] Polynom1 = {-1, 1};
+int[] Polynom2 = {2, 1};
 
-int [] array = PolynomToArray(poly1);
-PrintArray(array);
+int[] NewArray = ArrayMultiplication(Polynom1, Polynom2);
+PrintArray(NewArray);
+FromArrayToString(NewArray);
+
+
     
