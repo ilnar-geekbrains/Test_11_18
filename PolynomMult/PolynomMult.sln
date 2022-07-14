@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolynomMult", "PolynomMult\PolynomMult.csproj", "{2DA8710A-F3C6-43E4-8D22-9FA4D7266286}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77516228-21E2-47B5-B1F0-4CCE883137A6} = {77516228-21E2-47B5-B1F0-4CCE883137A6}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolynomMult.Tests", "PolynomMult.Tests\PolynomMult.Tests.csproj", "{A8124E2E-A7A4-43AC-BF37-DEF183A4AD82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77516228-21E2-47B5-B1F0-4CCE883137A6} = {77516228-21E2-47B5-B1F0-4CCE883137A6}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolynomMult.Lib", "PolynomMult.Lib\PolynomMult.Lib.csproj", "{77516228-21E2-47B5-B1F0-4CCE883137A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DA8710A-F3C6-43E4-8D22-9FA4D7266286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA8710A-F3C6-43E4-8D22-9FA4D7266286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA8710A-F3C6-43E4-8D22-9FA4D7266286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA8710A-F3C6-43E4-8D22-9FA4D7266286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8124E2E-A7A4-43AC-BF37-DEF183A4AD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8124E2E-A7A4-43AC-BF37-DEF183A4AD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8124E2E-A7A4-43AC-BF37-DEF183A4AD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8124E2E-A7A4-43AC-BF37-DEF183A4AD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77516228-21E2-47B5-B1F0-4CCE883137A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77516228-21E2-47B5-B1F0-4CCE883137A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77516228-21E2-47B5-B1F0-4CCE883137A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77516228-21E2-47B5-B1F0-4CCE883137A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69F8D838-CED7-454B-9E00-23C8375F0184}
+	EndGlobalSection
+EndGlobal
