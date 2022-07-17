@@ -117,7 +117,7 @@ class Program
         PolynomPrint(A, m);
         Console.WriteLine("\t");
 
-        Console.WriteLine("Введите количество второго полинома: ");
+        Console.WriteLine("Введите количество элементов второго полинома: ");
         int elementsCountSecond = int.Parse(Console.ReadLine());
         Console.WriteLine("Введите элементы второго полинома: ");
         double []B = new double[elementsCountSecond];
