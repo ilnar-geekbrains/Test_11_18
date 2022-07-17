@@ -1,15 +1,37 @@
 from copy import deepcopy
 from numpy import convolve
 
-# deepcopy позволит полностью скопировать и вложенные списки
+# Решение Задачи 1, способ 1
+# Используя deepcopy. Позволит полностью скопировать и вложенные списки
 def copy_array(input_array):
     copied_array = deepcopy(input_array)
     return copied_array
 
-# для решения этой задачи, что бы не изобретать велосипед, оптимально подойдет numpy
+# Решение Задачи 1, способ 2
+# Подойдет для копирования списка, без вложений.
+def copy_array(input_array):
+    copied_array = [element for element in input_array]
+    return copied_array
+
+# Решение Задачи 1, способ 3
+# Позволяет копировать вложенные списки
+def copy_array(input_array):
+    copied_array = []
+    for element in input_array:
+        if isinstance(element, list):
+            copied_array.append(copy_array(element))
+        else:
+            copied_array.append(element)
+    return copied_array
+
+# Решение Задачи 2, способ 1
+# Решение задачи, используя numpy
 def polynomial_multiply(array1, array2):
     result = list(convolve(array1, array2))
     return result
+
+
+
 
 # Тестирование работы программы (Задача 1)
 if copy_array([1, 5, 0, 9, 2]) == [1, 5, 0, 9, 2]:
