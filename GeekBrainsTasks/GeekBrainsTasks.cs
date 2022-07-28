@@ -9,14 +9,14 @@ public class GeekBrainsTasks
         return copiedArray;
     }
 
-    public static int[] PolinomMultiply(int[] firstPolinom, int[] secondPolinom)
+    public static int[] MultiplyPolinom(int[] firstPolinom, int[] secondPolinom)
     {
         int[] answerArray = new int[firstPolinom.Length + secondPolinom.Length - 1];
         for (int i = 0; i < firstPolinom.Length; i++)
         {
             for (int j = 0; j < secondPolinom.Length; j++)
             {
-                int indexRecordOfAnswerArray = 0 + (i + j);
+                int indexRecordOfAnswerArray = i + j;
                 answerArray[indexRecordOfAnswerArray] += firstPolinom[i] * secondPolinom[j];
             }
         }

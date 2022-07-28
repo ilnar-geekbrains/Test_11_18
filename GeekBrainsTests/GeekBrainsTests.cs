@@ -32,8 +32,9 @@ public class GeekBrainsTests
     {
         int[] firstPolinom = { -1, 1 };
         int[] secondPolinom = { 2, 1 };
-        var multipliedPolynom = GeekBrainsTasks.PolinomMultiply(firstPolinom, secondPolinom);
-        CollectionAssert.AreEqual(new int[] { -2, 1, 1 }, multipliedPolynom);
+        int[] rightAnswer = { -2, 1, 1 };
+        var multipliedPolynom = GeekBrainsTasks.MultiplyPolinom(firstPolinom, secondPolinom);
+        CollectionAssert.AreEqual(rightAnswer, multipliedPolynom);
     }
 
     [TestMethod]
@@ -41,8 +42,9 @@ public class GeekBrainsTests
     {
         int[] firstPolinom = { 3, 2, 1 };
         int[] secondPolinom = { 3, 2, 1 };
-        var multipliedPolynom = GeekBrainsTasks.PolinomMultiply(firstPolinom, secondPolinom);
-        CollectionAssert.AreEqual(new int[] { 9, 12, 10, 4, 1 }, multipliedPolynom);
+        int[] rightAnswer = { 9, 12, 10, 4, 1 };
+        var multipliedPolynom = GeekBrainsTasks.MultiplyPolinom(firstPolinom, secondPolinom);
+        CollectionAssert.AreEqual(rightAnswer, multipliedPolynom);
     }
 
     [TestMethod]
@@ -50,8 +52,9 @@ public class GeekBrainsTests
     {
         int[] firstPolinom = { 3, 3, 2, 1 };
         int[] secondPolinom = { 3, 3, 2, 1 };
-        var multipliedPolynom = GeekBrainsTasks.PolinomMultiply(firstPolinom, secondPolinom);
-        CollectionAssert.AreEqual(new int[] { 9, 18, 21, 18, 10, 4, 1 }, multipliedPolynom);
+        int[] rightAnswer = { 9, 18, 21, 18, 10, 4, 1 };
+        var multipliedPolynom = GeekBrainsTasks.MultiplyPolinom(firstPolinom, secondPolinom);
+        CollectionAssert.AreEqual(rightAnswer, multipliedPolynom);
     }
 
     [TestMethod]
@@ -59,7 +62,8 @@ public class GeekBrainsTests
     {
         int[] firstPolinom = { 10, 3, 3, 2, 1 };
         int[] secondPolinom = { 10, 3, 3, 2, 1 };
-        var multipliedPolynom = GeekBrainsTasks.PolinomMultiply(firstPolinom, secondPolinom);
-        CollectionAssert.AreEqual(new int[] {100, 60, 69, 58, 41, 18, 10, 4, 1 }, multipliedPolynom);
+        int[] rightAnswer = { 100, 60, 69, 58, 41, 18, 10, 4, 1 };
+        var multipliedPolynom = GeekBrainsTasks.MultiplyPolinom(firstPolinom, secondPolinom);
+        CollectionAssert.AreEqual(rightAnswer, multipliedPolynom);
     }
 }
