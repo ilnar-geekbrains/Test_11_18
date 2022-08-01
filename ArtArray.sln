@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtArray", "ArtArray\ArtArray.csproj", "{927148EC-5117-4075-B2FF-231FE6D1F4E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtArray.Tests", "ArtArray.Tests\ArtArray.Tests.csproj", "{E541C5DA-B74B-4BC3-90CD-FF619B8E0584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{927148EC-5117-4075-B2FF-231FE6D1F4E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927148EC-5117-4075-B2FF-231FE6D1F4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927148EC-5117-4075-B2FF-231FE6D1F4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927148EC-5117-4075-B2FF-231FE6D1F4E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E541C5DA-B74B-4BC3-90CD-FF619B8E0584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E541C5DA-B74B-4BC3-90CD-FF619B8E0584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E541C5DA-B74B-4BC3-90CD-FF619B8E0584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E541C5DA-B74B-4BC3-90CD-FF619B8E0584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16C62284-5CBB-4470-8D6D-49942AE51B08}
+	EndGlobalSection
+EndGlobal
