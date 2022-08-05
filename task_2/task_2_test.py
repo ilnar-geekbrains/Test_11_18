@@ -30,6 +30,15 @@ class TestArrayMultiplication(TestCase):
         expected = [-6, 1, 2, 2, 1]
         self.assertEqual(main_func(*arrays), expected)
 
+    def test_with_zero_element(self):
+        arrays = (
+            [-1, 1],
+            [2, 1],
+            [3, 0, 1],
+        )
+        expected = [-6, 3, 1, 1, 1]
+        self.assertEqual(main_func(*arrays), expected)
+
 
 if __name__ == '__main__':
     main()
