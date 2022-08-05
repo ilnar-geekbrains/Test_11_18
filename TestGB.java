@@ -6,7 +6,7 @@ public class TestGB {
     int array[] = new int[size]; // Создаём массив int размером в size (не указано в тестовом, что нельзя
                                  // привязаться к типу)
     for (int i = 0; i < array.length; i++) {
-      array[i] = (int) Math.round((Math.random() * 200) - 100);
+      array[i] = (int) Math.round((Math.random() * 200) - 100); // Заполняем массив случайными величинами от -100 до 100
     }
     return array;
   }
@@ -20,7 +20,8 @@ public class TestGB {
   public static void main(String[] args) {
     TestGB obj = new TestGB();
 
-    int arr[] = obj.CreateArray(2);
+    int arr[] = obj.CreateArray(2); // создание массива
+    // Тесты работы программы
     if (Arrays.equals(arr, obj.CloneArray(arr))) {
       System.out.println("Тест пройден!");
     } else {
