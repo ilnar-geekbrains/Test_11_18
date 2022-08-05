@@ -37,3 +37,20 @@ def copy_by_comprehension(array: list) -> list:
     assert all(isinstance(x, type(array[0])) for x in array)  # имеют ли все элементы один тип
 
     return [el for el in array]
+
+
+def copy_by_map(array: list) -> list:
+    """
+    Array copy function using map() function
+
+    :param array:
+    :return:
+    """
+
+    assert all(isinstance(x, type(array[0])) for x in array)  # имеют ли все элементы один тип
+
+    return list(map(lambda x: x, array))
+
+
+if __name__ == '__main__':
+    pass
