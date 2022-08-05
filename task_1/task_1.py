@@ -24,3 +24,16 @@ def copy_by_slice(array: list) -> list:
     assert all(isinstance(x, type(array[0])) for x in array)  # имеют ли все элементы один тип
 
     return array[:]
+
+
+def copy_by_comprehension(array: list) -> list:
+    """
+    Array copy function using list comprehension
+
+    :param array:
+    :return:
+    """
+
+    assert all(isinstance(x, type(array[0])) for x in array)  # имеют ли все элементы один тип
+
+    return [el for el in array]
