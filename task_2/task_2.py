@@ -36,5 +36,24 @@ def main_func(*args: list) -> list:
     return first_mult
 
 
+def recursive_array_multiplication(*args: list) -> list:
+    """
+    Recursive function of multiplying an arbitrary number of arrays
+
+    :param args: arrays
+    :type args: list
+    :return: result array
+    :rtype: list
+    """
+    if len(args) == 2:
+        result = {}
+        for i_1, k_1 in enumerate(args[0]):
+            for i_2, k_2 in enumerate(args[1]):
+                result[i_1 + i_2] = result.setdefault(i_1 + i_2, 0) + k_1 * k_2
+        return list(result.values())
+
+    return multiply_arrays(args[0], multiply_arrays(*args[1:]))
+
+
 if __name__ == '__main__':
     pass
