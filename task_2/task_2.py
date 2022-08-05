@@ -20,5 +20,21 @@ def multiply_arrays(array1: list, array2: list):
     return list(result.values())
 
 
+def main_func(*args: list) -> list:
+    """
+    The function of looping through arrays and calling the multiply arrays function
+
+    :param args: arrays
+    :type args: list
+    :return: the result of multiping
+    :rtype: list
+    """
+
+    first_mult = args[0]
+    for second_mult in args[1:]:
+        first_mult = multiply_arrays(first_mult, second_mult)
+    return first_mult
+
+
 if __name__ == '__main__':
     pass
