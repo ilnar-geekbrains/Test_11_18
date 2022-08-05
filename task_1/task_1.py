@@ -11,3 +11,16 @@ def copy_by_list_method(array: list) -> list:
     assert all(isinstance(x, type(array[0])) for x in array)  # имеют ли все элементы один тип
 
     return array.copy()
+
+
+def copy_by_slice(array: list) -> list:
+    """
+    Array copy function using slicing
+
+    :param array: array object
+    :return: list
+    """
+
+    assert all(isinstance(x, type(array[0])) for x in array)  # имеют ли все элементы один тип
+
+    return array[:]
