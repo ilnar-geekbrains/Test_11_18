@@ -20,6 +20,22 @@ class TestArrayCopy(TestCase):
         self.assertEqual(copy_by_comprehension(array), expected)
         self.assertEqual(copy_by_map(array), expected)
 
+    def test_multidimensional_arrays(self):
+        array = [
+            [-1, 1],
+            [2, 1],
+            [3, 1],
+        ]
+        expected = [
+            [-1, 1],
+            [2, 1],
+            [3, 1],
+        ]
+        self.assertEqual(copy_by_list_method(array), expected)
+        self.assertEqual(copy_by_slice(array), expected)
+        self.assertEqual(copy_by_comprehension(array), expected)
+        self.assertEqual(copy_by_map(array), expected)
+
 
 if __name__ == '__main__':
     main()
