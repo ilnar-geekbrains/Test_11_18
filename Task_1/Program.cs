@@ -84,6 +84,10 @@ string PrintArray(string [] array)
     return result;
 }
 
+/* 
+Метод проверяет корректность ввода длины массива через рекурсию.  
+*/
+
 int CheckCorrectNum()
 {
     Console.WriteLine("Size array should be a positive and greater than zero.");
@@ -99,43 +103,91 @@ int CheckCorrectNum()
     
 }
 
-
-/* Тесты основного метода. 
+/* 
+Метод проверяет корректность ввода строки через рекурсию. 
+Строка не должна быть пустой.  
 */
-// Console.WriteLine("Tests of Method CopyArray: ");
 
-// TestCopyArray1();
-// TestCopyArray2();
+string CheckCorrectString()
+{
+    Console.WriteLine("CharacterSet should not be is empty.");
+    Console.Write("Input characterSet: ");
+    string arg = Console.ReadLine();
 
-// Console.WriteLine("Main programm: ");
+    if (arg != String.Empty) return arg;
+    else 
+    {
+        return CheckCorrectString();
+        
+    }
+    
+}
+
+int CheckCorrectMinSizeRow()
+{
+    Console.WriteLine("Min Size Row array should be a positive and greater than zero.");
+    Console.Write("Input min Size Row array: ");
+    int arg = Convert.ToInt32(Console.ReadLine());
+
+    if (arg >0) return arg;
+    else 
+    {
+        return CheckCorrectMinSizeRow();
+        
+    }
+    
+}
 
 
-// int size = CheckCorrectNum();
+/* 
+Тесты основного метода. 
+*/
+Console.WriteLine("Tests of Method CopyArray: ");
 
-// Console.Write("Input characterSet: ");
-// string characterSet = Console.ReadLine();
+TestCopyArray1();
+TestCopyArray2();
 
-// Console.Write("Input min Size Row array: ");
-// int minSizeRow = Convert.ToInt32(Console.ReadLine());
-
-// Console.Write("Input max Size Row array: ");
-// int maxSizeRow = Convert.ToInt32(Console.ReadLine());
-
-// string [] array = CreateArray(size);
-// FillArray(array, characterSet, minSizeRow,maxSizeRow);
-
-// Console.WriteLine();
-// Console.WriteLine("Created initial array: ");
-// Console.WriteLine();
-// Console.WriteLine($"[\"{PrintArray(array)}\"]");
-// Console.WriteLine();
+Console.WriteLine("Main programm: ");
 
 
-// string [] CopyInitArray = CopyArray(array);
+int size = CheckCorrectNum();
 
-// Console.WriteLine("Copy init array: ");
-// Console.WriteLine();
-// Console.WriteLine($"[\"{PrintArray(CopyInitArray)}\"]");
+string characterSet = CheckCorrectString();
+
+int minSizeRow = CheckCorrectMinSizeRow();
+
+int CheckCorrectMaxSizeRow()
+{
+    Console.WriteLine("Max Size Row array should be a positive, greater than zero and greater than the min Size Row.");
+    Console.Write("Input max Size Row array: ");
+    int arg = Convert.ToInt32(Console.ReadLine());
+
+    if (arg >0 && arg>minSizeRow) return arg;
+    else 
+    {
+        return CheckCorrectMaxSizeRow();
+        
+    }
+    
+}
+
+int maxSizeRow = CheckCorrectMaxSizeRow();
+
+string [] array = CreateArray(size);
+FillArray(array, characterSet, minSizeRow,maxSizeRow);
+
+Console.WriteLine();
+Console.WriteLine("Created initial array: ");
+Console.WriteLine();
+Console.WriteLine($"[\"{PrintArray(array)}\"]");
+Console.WriteLine();
+
+
+string [] CopyInitArray = CopyArray(array);
+
+Console.WriteLine("Copy init array: ");
+Console.WriteLine();
+Console.WriteLine($"[\"{PrintArray(CopyInitArray)}\"]");
 
 
 
