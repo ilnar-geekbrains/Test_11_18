@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{81F57A16-440A-4C24-ABA3-F2BDB2FC336A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayCopier", "ArrayCopier", "{FEE91E43-7351-4512-8EF1-D177A9A9DA32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{43568B99-ADF9-4A13-9AAE-FB8EE0F0BE71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{CB17BE26-4E43-49C6-8C2A-1F04F540A576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCopier.Extensions", "ArrayCopier\Extensions\ArrayCopier.Extensions\ArrayCopier.Extensions.csproj", "{8EE92067-F203-4AB5-ABC5-0E01F30C9494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCopier.Logic.Interfaces", "ArrayCopier\Logic\ArrayCopier.Logic.Interfaces\ArrayCopier.Logic.Interfaces.csproj", "{D7633770-642E-4724-84F7-B095EE7DB866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCopier.Logic", "ArrayCopier\Logic\ArrayCopier.Logic\ArrayCopier.Logic.csproj", "{BD373E51-8C4F-4605-81FA-A70BCDA5669F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F57A16-440A-4C24-ABA3-F2BDB2FC336A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F57A16-440A-4C24-ABA3-F2BDB2FC336A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F57A16-440A-4C24-ABA3-F2BDB2FC336A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F57A16-440A-4C24-ABA3-F2BDB2FC336A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE92067-F203-4AB5-ABC5-0E01F30C9494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE92067-F203-4AB5-ABC5-0E01F30C9494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE92067-F203-4AB5-ABC5-0E01F30C9494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE92067-F203-4AB5-ABC5-0E01F30C9494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7633770-642E-4724-84F7-B095EE7DB866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7633770-642E-4724-84F7-B095EE7DB866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7633770-642E-4724-84F7-B095EE7DB866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7633770-642E-4724-84F7-B095EE7DB866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD373E51-8C4F-4605-81FA-A70BCDA5669F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD373E51-8C4F-4605-81FA-A70BCDA5669F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD373E51-8C4F-4605-81FA-A70BCDA5669F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD373E51-8C4F-4605-81FA-A70BCDA5669F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43568B99-ADF9-4A13-9AAE-FB8EE0F0BE71} = {FEE91E43-7351-4512-8EF1-D177A9A9DA32}
+		{CB17BE26-4E43-49C6-8C2A-1F04F540A576} = {FEE91E43-7351-4512-8EF1-D177A9A9DA32}
+		{8EE92067-F203-4AB5-ABC5-0E01F30C9494} = {CB17BE26-4E43-49C6-8C2A-1F04F540A576}
+		{D7633770-642E-4724-84F7-B095EE7DB866} = {43568B99-ADF9-4A13-9AAE-FB8EE0F0BE71}
+		{BD373E51-8C4F-4605-81FA-A70BCDA5669F} = {43568B99-ADF9-4A13-9AAE-FB8EE0F0BE71}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {134869BE-381F-4026-91D8-BB2B8D569F2C}
+	EndGlobalSection
+EndGlobal
