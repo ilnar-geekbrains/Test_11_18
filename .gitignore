@@ -1,0 +1,14 @@
+
+*.v2
+*.v1
+ArrayExtension.Test/bin/Debug/net6.0/CoverletSourceRootsMapping
+*.json
+*.props
+*.targets
+ArrayExtension.Test/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+ArrayExtension.Test/obj/Debug/net6.0/ArrayExtension.Test.AssemblyInfo.cs
+*.editorconfig
+ArrayExtension/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+ArrayExtension/obj/Debug/net6.0/ArrayExtension.AssemblyInfo.cs
+.vs/GeekBrainsTask/v17/.suo
+GeekBrainsTask.sln
