@@ -8,6 +8,6 @@ def cop_mass(spisok):
 #Пример массива
 spisok = [0, 1, 2, 3, 4, 5, 6]
 #Вызов функции копирования и сохранения в новый массив
-spicok_cop = cop_mass(spisok)
+spicok_cop1 = cop_mass(spisok)
 #Вывод полученного списка
-print(spicok_cop)
+print(spicok_cop1)
