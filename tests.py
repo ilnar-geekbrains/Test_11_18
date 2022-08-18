@@ -1,5 +1,6 @@
 from task_1 import copyofDeepCopy
 from task_2 import arraysProduct
+import sys
 
 def test_task_1():
     """
@@ -33,6 +34,12 @@ def test_task_2():
                     [-28, -36, -3, -16, 6, 26, 25, 38, 0, -12]
                    ]
     
+    print('Проверка на четырёх тестах: ', end='')
     for pols, expected_answer in zip(coefs, expected_answers):
         answer = arraysProduct(*pols)
         assert answer == expected_answer
+
+        sys.stdout.write('OK ')
+        sys.stdout.flush()
+    
+    print('\nВсё ок)')
