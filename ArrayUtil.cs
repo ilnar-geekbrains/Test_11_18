@@ -10,6 +10,11 @@ public static class ArrayUtil
         if (source.Length != destination.Length)
             return false;
 
+        for (int i = 0; i < source.Length; i++)
+        {
+            destination[i] = source[i];
+        }
+
         return true;
     }
 }

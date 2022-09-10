@@ -20,6 +20,31 @@ public static class Tests
         PrintResult(result);
     }
 
+    public static void Arrays_must_have_the_same_contents(int[] firstArray, int[] secondArray)
+    {
+        Console.WriteLine(
+            $"Тест проверки на идентичность массивов. Входные данные: first array - {string.Join(',', firstArray)} | second array  - {string.Join(',', secondArray)}");
+
+        bool result = true;
+        if (firstArray.Length != secondArray.Length)
+        {
+            result = false;
+        }
+        else
+        {
+            for (int i = 0; i < firstArray.Length; i++)
+            {
+                if (firstArray[i] != secondArray[i])
+                {
+                    result = false;
+                    break;
+                }
+            }
+        }
+
+        PrintResult(result);
+    }
+
     private static void PrintResult(bool result)
     {
         Console.WriteLine(result ? $"ПРОЙДЕН" : $"ПРОВАЛЕН");
