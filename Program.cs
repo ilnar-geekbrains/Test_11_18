@@ -14,3 +14,8 @@ int[] source = new[] {1, 2};
 int[] copy = new int[2];
 ArrayUtil.Copy(source, copy);
 Tests.Arrays_must_have_the_same_contents(firstArray: source, secondArray: copy);
+
+source = new[] {1, 2, 99999999};
+copy = new int[3];
+ArrayUtil.Copy(source, copy);
+Tests.Arrays_must_have_the_same_contents(firstArray: source, secondArray: copy);
