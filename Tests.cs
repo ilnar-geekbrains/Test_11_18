@@ -11,4 +11,14 @@ public static class Tests
         Console.WriteLine(result ? $"ПРОЙДЕН" : $"ПРОВАЛЕН");
         Console.WriteLine("===== Конец теста =====");
     }
+
+    public static void Input_data_must_be_initialized(int[] source, int[] destination)
+    {
+        Console.WriteLine(
+            $"Тест проверки на инициализацию массивов. Входные данные: source is initialized - {source != null} | destination is initialized - {destination != null}");
+
+        bool result = ArrayUtil.Copy(source, destination);
+        Console.WriteLine(result ? $"ПРОЙДЕН" : $"ПРОВАЛЕН");
+        Console.WriteLine("===== Конец теста =====");
+    }
 }

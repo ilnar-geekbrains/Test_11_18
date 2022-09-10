@@ -1,9 +1,9 @@
 ﻿using Arrays;
 
-int[] source = new int[0];
-int[] destination = new int[1];
-Tests.Length_of_arrays_must_be_same(source, destination);
+Tests.Input_data_must_be_initialized(null, null);
+Tests.Input_data_must_be_initialized(new int[1], null);
+Tests.Input_data_must_be_initialized(null, new int[1]);
+Tests.Input_data_must_be_initialized(new int[1], new int[1]);
 
-source = new int[2];
-destination = new int[2];
-Tests.Length_of_arrays_must_be_same(source, destination);
+Tests.Length_of_arrays_must_be_same(new int[1], new int[2]);
+Tests.Length_of_arrays_must_be_same(new int[2], new int[2]);
