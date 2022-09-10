@@ -8,7 +8,7 @@ public static class Tests
             "Проверка одинаковой длины массива",
             $"source.Length {source.Length} | destination.Length {destination.Length}");
 
-        bool result = ArrayUtil.Copy(source, destination);
+        bool result = ArrayUtil.Copy(source, destination) != ErrorCode.DifferentArrayLengths;
         PrintResult(result);
     }
 
@@ -18,7 +18,7 @@ public static class Tests
             "Проверка на инициализацию массивов",
             $"source is initialized - {source != null} | destination is initialized - {destination != null}");
 
-        bool result = ArrayUtil.Copy(source, destination);
+        bool result = ArrayUtil.Copy(source, destination) != ErrorCode.NotInitializedInputData;
         PrintResult(result);
     }
 

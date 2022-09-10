@@ -1,20 +1,27 @@
 namespace Arrays;
 
+public enum ErrorCode
+{
+    Empty,
+    NotInitializedInputData,
+    DifferentArrayLengths
+}
+
 public static class ArrayUtil
 {
-    public static bool Copy(int[] source, int[] destination)
+    public static ErrorCode Copy(int[] source, int[] destination)
     {
         if (source == null || destination == null)
-            return false;
+            return ErrorCode.NotInitializedInputData;
 
         if (source.Length != destination.Length)
-            return false;
+            return ErrorCode.DifferentArrayLengths;
 
         for (int i = 0; i < source.Length; i++)
         {
             destination[i] = source[i];
         }
 
-        return true;
+        return ErrorCode.Empty;
     }
 }
